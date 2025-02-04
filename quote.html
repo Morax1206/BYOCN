@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYOC Express Cargo Limited</title>
+        <link rel="stylesheet" href="quote.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/favicon (1).ico">
+    </head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <a href="index.html"><img src="images/IMG_3011.PNG" alt=""></a>
+            <div class="nav" id="toggle">
+                <i class="fa fa-times" aria-hidden="true" onclick="hidemenu()"></i> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="TracK shipment.html">Track Shipment</a></li>
+                    <li><a href="quote.html">Quote Request</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showmenu()"></i>
+        </nav>
+    </header>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Request a Quote</h1>
+            <p>Get a personalized shipping quote tailored to your needs. Simply fill out the form below, and we’ll get back to you promptly.</p>
+        </div>
+    </header>
+
+    <!-- Quote Request Form -->
+    <section class="quote-request">
+        <div class="container">
+            <h2>Request a Quote</h2>
+            <form action="https://formsubmit.co/abdulafeezmoronkola@gmail.com" method="post" class="quote-form">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+
+                <!-- Shipment Details -->
+                <h3>Shipment Details</h3>
+                <div class="form-group">
+                    <label for="origin">Origin:</label>
+                    <input type="text" id="origin" name="origin" placeholder="City or Country of Origin" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="City or Country of Destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Total Weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="dimensions">Dimensions (L x W x H in cm):</label>
+                    <input type="text" id="dimensions" name="dimensions" placeholder="e.g., 50 x 40 x 30" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceType">Service Type:</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">Select a Service</option>
+                        <option value="air">Air Freight</option>
+                        <option value="sea">Sea Freight</option>
+                        <option value="land">Land Freight</option>
+                        <option value="express">Express Delivery</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information:</label>
+                    <textarea id="additionalInfo" name="additional Info" rows="4" placeholder="Enter any special requirements or details"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Why Choose BYOC Express Cargo Limited?</h2>
+            <p>Experience reliable, affordable, and tailored logistics solutions for your shipping needs.</p>
+            <a href="#services" class="btn">Learn More About Our Services</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 BYOC Express Cargo Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var toggle = document.getElementById("toggle");
+        function showmenu(){
+            toggle.style.right = "0";
+        }
+        function hidemenu(){
+            toggle.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>
